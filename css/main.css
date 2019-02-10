@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: 'Niramit', sans-serif;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../img/background1.svg);
+}
+
+.sign-up {
+  background-color: #fff;
+  width: 400px;
+  border: 1px solid #e6e6e6;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px 0 0 0;
+}
+
+.footer {
+  width: 400px;
+  text-align: center;
+  margin: 10px 0;
+  padding: 20px 0 0 0;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-control {
+  background-color: #fafafa;
+}
+
+.sign-up-header h2 {
+  color: #ff3399;
+}
+
+.share {
+  color: #ff6600;
+}
+
+.form-group {
+}
