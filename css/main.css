@@ -85,6 +85,11 @@ a {
   color: #ff6600;
 }
 
+.tour, .tour a {
+  text-align: center;
+  color: green;
+}
+
 .inner p {
   letter-spacing: 1px;
   text-align: center;
@@ -219,6 +224,9 @@ HOME
   color: #000;
 }
 
+/*********************************
+HOME MEDIA QUERIES
+/*********************************/
 @media(min-width:900px) {
   .topics-left{
     background: #fff;
