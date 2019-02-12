@@ -224,6 +224,12 @@ HOME
   color: #000;
 }
 
+.footer {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 1.2em;
+}
+
 /*********************************
 HOME MEDIA QUERIES
 /*********************************/
