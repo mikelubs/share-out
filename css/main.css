@@ -1,3 +1,6 @@
+/*********************************
+LOGIN AND SIGNUP
+/*********************************/
   @font-face {
       font-family: 'shareout';
       src: url('../fonts/mikemedium.ttf');
@@ -205,3 +208,200 @@ button {
 
   .wrapper {
     background: none; } }
+
+/*********************************
+HOME
+/*********************************/
+.wrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  color: #000;
+}
+
+@media(min-width:900px) {
+  .topics-left{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .topics-left p {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .topics-right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-image: url(../images/background.svg);
+    flex: 2;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .card {
+    margin: 30px 0;
+    flex-basis: 28%;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  .card h4, p {
+    padding: 10px 15px;
+  }
+}
+@media(max-width:900px) {
+  .topics-left{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+  }
+
+  .topics-left p {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .topics-right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-image: url(../images/background.svg);
+    flex: 2;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .card {
+    margin: 30px 0;
+    flex-basis: 45%;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  .card h4, p {
+    padding: 10px 15px;
+  }
+}
+@media(max-width:622px) {
+  .wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #000;
+  }
+
+  .topics-left{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  .topics-left p {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .topics-right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-image: url(../images/background.svg);
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .card {
+    margin: 30px 0;
+    flex-basis: 45%;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  .card h4, p {
+    padding: 10px 15px;
+  }
+}
+@media(max-width:425px) {
+  .wrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #000;
+  }
+
+  .topics-left{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/free.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+  }
+
+  .topics-left p {
+    padding: 10px;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .topics-right {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-image: url(../images/background.svg);
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .card {
+    margin: 30px 0;
+    flex-basis: 70%;
+    box-sizing: border-box;
+    padding: 2px;
+  }
+
+  .card h4, p {
+    padding: 10px 15px;
+  }
+}
