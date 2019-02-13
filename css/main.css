@@ -222,6 +222,7 @@ HOME
   flex-wrap: wrap;
   min-height: 100vh;
   color: #000;
+  background-color: #fafafa;
 }
 
 .footer {
@@ -257,16 +258,15 @@ HOME MEDIA QUERIES
   .topics-right {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
     background-image: url(../images/background.svg);
     flex: 2;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: flex-start;
   }
 
   .card {
-    margin: 30px 0;
+    margin: 20px 0;
     display: flex;
     flex-basis: 28%;
     box-sizing: border-box;
@@ -322,7 +322,6 @@ HOME MEDIA QUERIES
     padding: 10px 15px;
   }
 }
-
 @media(max-width:622px) {
   .wrapper2 {
     display: flex;
@@ -406,19 +405,20 @@ HOME MEDIA QUERIES
   .topics-right {
     display: flex;
     flex-wrap: wrap;
-    background-color: #fff;
     background-image: url(../images/background.svg);
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: flex-end;
     align-content: flex-start;
   }
 
   .card {
+    border: none;
     margin: 10px 0;
     flex-basis: 90%;
     box-sizing: border-box;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 38px;
+    box-shadow: 0 0 15px #ccc;
   }
 
   .card h4, p {
