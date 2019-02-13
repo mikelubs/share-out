@@ -234,7 +234,7 @@ HOME
 /*********************************
 HOME MEDIA QUERIES
 /*********************************/
-@media(min-width:900px) {
+@media(min-width:822px) {
   .topics-left{
     background: #fff;
     flex: 1;
@@ -242,7 +242,7 @@ HOME MEDIA QUERIES
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/free.png);
+    /* background-image: url(../images/free.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
@@ -272,24 +272,24 @@ HOME MEDIA QUERIES
     box-sizing: border-box;
     padding: 10px;
     border-radius: 10%;
+    border: none;
+    box-shadow: 0 0 15px #ccc;
   }
 
   .card h4, p {
+    letter-spacing: 0.06em;
     padding: 10px 15px;
+    font-size: 1.3em;
   }
 }
-@media(max-width:900px) {
+@media(max-width:822px) {
   .topics-left{
     background: #fff;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-image: url(../images/free.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+    padding-top: 80px;
   }
 
   .topics-left p {
@@ -316,6 +316,8 @@ HOME MEDIA QUERIES
     box-sizing: border-box;
     padding: 10px;
     border-radius: 10%;
+    border: none;
+    box-shadow: 0 0 15px #ccc;
   }
 
   .card h4, p {
@@ -338,7 +340,7 @@ HOME MEDIA QUERIES
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/free.png);
+    /* background-image: url(../images/free.png); */
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -367,6 +369,8 @@ HOME MEDIA QUERIES
     box-sizing: border-box;
     padding: 10px;
     border-radius: 10%;
+    border: none;
+    box-shadow: 0 0 15px #ccc;
   }
 
   .card h4, p {
@@ -389,7 +393,6 @@ HOME MEDIA QUERIES
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/free.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
@@ -424,4 +427,13 @@ HOME MEDIA QUERIES
   .card h4, p {
     padding: 10px 15px;
   }
+}
+
+.card p {
+  font-size: 0.9em;
+}
+
+.card h4 {
+  font-weight: bold;
+  font-size: 1.3em;
 }
