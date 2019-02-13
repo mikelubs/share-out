@@ -414,8 +414,8 @@ HOME MEDIA QUERIES
   }
 
   .card {
-    margin: 30px 0;
-    flex-basis: 70%;
+    margin: 10px 0;
+    flex-basis: 90%;
     box-sizing: border-box;
     padding: 10px;
     border-radius: 10%;
