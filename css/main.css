@@ -405,7 +405,7 @@ HOME MEDIA QUERIES
   .topics-right {
     display: flex;
     flex-wrap: wrap;
-    background-image: url(../images/background.svg);
+    background-image: none;
     justify-content: space-around;
     align-items: flex-end;
     align-content: flex-start;
