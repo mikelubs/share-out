@@ -2,18 +2,102 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Share-Out</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Share-Out</title>
 
 		<!-- LINEARICONS -->
 		<link rel="stylesheet" href="fonts/linearicons/style.css">
 
 		<!-- STYLE CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style3.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+		<!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
+
+			<div class="wrapper1">
+			<!-- Sidebar  -->
+			<nav id="sidebar">
+					<div id="dismiss">
+							<i class="fas fa-arrow-left"></i>
+					</div>
+
+					<div class="sidebar-header">
+							<h3>ShareOut</h3>
+					</div>
+
+					<ul class="list-unstyled components">
+							<p>We are Family</p>
+							<li class="active">
+									<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+									<ul class="collapse list-unstyled" id="homeSubmenu">
+											<li>
+													<a href="#">Home 1</a>
+											</li>
+											<li>
+													<a href="#">Home 2</a>
+											</li>
+											<li>
+													<a href="#">Home 3</a>
+											</li>
+									</ul>
+							</li>
+							<li>
+									<a href="#">About</a>
+									<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+									<ul class="collapse list-unstyled" id="pageSubmenu">
+											<li>
+													<a href="#">Page 1</a>
+											</li>
+											<li>
+													<a href="#">Page 2</a>
+											</li>
+											<li>
+													<a href="#">Page 3</a>
+											</li>
+									</ul>
+							</li>
+							<li>
+									<a href="#">Portfolio</a>
+							</li>
+							<li>
+									<a href="#">Contact</a>
+							</li>
+					</ul>
+
+					<ul class="list-unstyled CTAs">
+							<li>
+									<a href="#" class="download">Share the love</a>
+							</li>
+							<li>
+									<a href="#" class="article">Experiences</a>
+							</li>
+					</ul>
+			</nav>
+
+			<!-- Page Content  -->
+			<div id="content">
+
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+							<div class="container-fluid">
+
+									<button type="button" id="sidebarCollapse" class="btn btn-info">
+											<i class="fas fa-align-justify"></i>
+											<span>MENU</span>
+									</button>
+							</div>
+					</nav>
+			</div>
+	</div>
+
+	<div class="overlay"></div>
     <div class="wrapper2">
         <div class="topics-left">
 						<img src="images/logo.jpeg" alt="" width="220px" height="200px">
@@ -55,7 +139,28 @@
         <p class="footer">&copy2019 ShareOut</p>
     </div>
 		<script src="js/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
