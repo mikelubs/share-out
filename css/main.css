@@ -348,6 +348,11 @@ HOME MEDIA QUERIES
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left;
+    padding: 0px;
+  }
+
+  .topics-left img {
+    display: none;
   }
 
   .topics-left p {
